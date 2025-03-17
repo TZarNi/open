@@ -1,0 +1,46 @@
+---
+anchors:
+  thresholds-operstate: &thresholds-operstate
+  - color: red
+    level: 0
+  - color: green
+    level: 1
+  thresholds-traffic: &thresholds-traffic
+  - color: gray
+    level: 0
+  - color: green
+    level: 199999
+  - color: yellow
+    level: 500000
+  - color: orange
+    level: 1000000
+  - color: red
+    level: 5000000
+  label-config: &label-config
+    separator: replace
+    units: bps
+    decimalPoints: 1
+    valueMappings:
+    - valueMax: 199999
+      text: ​
+    - valueMin: 200000
+cellIdPreamble: cell-
+cells:
+  c8kv1:Gi2:c8kv3:Gi2:
+    dataRef: oper-state:c8kv1:Gi2
+    fillColor:
+      thresholds: *thresholds-operstate
+  link_id:c8kv1:Gi2:c8kv3:Gi2:
+    dataRef: c8kv1:Gi2:out
+    label: *label-config
+    strokeColor:
+      thresholds: *thresholds-traffic
+  c8kv3:Gi2:c8kv1:Gi2:
+    dataRef: oper-state:c8kv3:Gi2
+    fillColor:
+      thresholds: *thresholds-operstate
+  link_id:c8kv3:Gi2:c8kv1:Gi2:
+    dataRef: c8kv3:Gi2:out
+    label: *label-config
+    strokeColor:
+      thresholds: *thresholds-traffic
