@@ -27,7 +27,7 @@ anchors:
 cellIdPreamble: cell-
 cells:
   c8kv1:Gi2:c8kv3:Gi2:
-    dataRef: oper-state:c8kv1:Gi2
+    dataRef: oper-state:c8kv1:GigabitEthernet2
     fillColor:
       thresholds: *thresholds-operstate
   link_id:c8kv1:Gi2:c8kv3:Gi2:
@@ -36,7 +36,7 @@ cells:
     strokeColor:
       thresholds: *thresholds-traffic
   c8kv3:Gi2:c8kv1:Gi2:
-    dataRef: oper-state:c8kv3:Gi2
+    dataRef: oper-state:c8kv3:GigabitEthernet2
     fillColor:
       thresholds: *thresholds-operstate
   link_id:c8kv3:Gi2:c8kv1:Gi2:
