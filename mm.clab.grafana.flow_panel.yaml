@@ -26,57 +26,21 @@ anchors:
     - valueMin: 200000
 cellIdPreamble: cell-
 cells:
-  c8kv1:Gi2:c8kv3:Gi2:
-    dataRef: oper-state:c8kv1:Gi2
+  c8kv1:GigabitEthernet2:c8kv3:GigabitEthernet2:
+    dataRef: oper-state:c8kv1:GigabitEthernet2
     fillColor:
       thresholds: *thresholds-operstate
-  link_id:c8kv1:Gi2:c8kv3:Gi2:
-    dataRef: c8kv1:Gi2:out
+  link_id:c8kv1:GigabitEthernet2:c8kv3:GigabitEthernet2:
+    dataRef: c8kv1:GigabitEthernet2:out
     label: *label-config
     strokeColor:
       thresholds: *thresholds-traffic
-  c8kv1:Gi4:client1:eth1:
-    dataRef: oper-state:c8kv1:Gi4
+  c8kv3:GigabitEthernet2:c8kv1:GigabitEthernet2:
+    dataRef: oper-state:c8kv3:GigabitEthernet2
     fillColor:
       thresholds: *thresholds-operstate
-  link_id:c8kv1:Gi4:client1:eth1:
-    dataRef: c8kv1:Gi4:out
-    label: *label-config
-    strokeColor:
-      thresholds: *thresholds-traffic
-  c8kv3:Gi2:c8kv1:Gi2:
-    dataRef: oper-state:c8kv3:Gi2
-    fillColor:
-      thresholds: *thresholds-operstate
-  link_id:c8kv3:Gi2:c8kv1:Gi2:
-    dataRef: c8kv3:Gi2:out
-    label: *label-config
-    strokeColor:
-      thresholds: *thresholds-traffic
-  c8kv3:Gi4:client2:eth1:
-    dataRef: oper-state:c8kv3:Gi4
-    fillColor:
-      thresholds: *thresholds-operstate
-  link_id:c8kv3:Gi4:client2:eth1:
-    dataRef: c8kv3:Gi4:out
-    label: *label-config
-    strokeColor:
-      thresholds: *thresholds-traffic
-  client1:eth1:c8kv1:Gi4:
-    dataRef: oper-state:client1:eth1
-    fillColor:
-      thresholds: *thresholds-operstate
-  link_id:client1:eth1:c8kv1:Gi4:
-    dataRef: client1:eth1:out
-    label: *label-config
-    strokeColor:
-      thresholds: *thresholds-traffic
-  client2:eth1:c8kv3:Gi4:
-    dataRef: oper-state:client2:eth1
-    fillColor:
-      thresholds: *thresholds-operstate
-  link_id:client2:eth1:c8kv3:Gi4:
-    dataRef: client2:eth1:out
+  link_id:c8kv3:GigabitEthernet2:c8kv1:GigabitEthernet2:
+    dataRef: c8kv3:GigabitEthernet2:out
     label: *label-config
     strokeColor:
       thresholds: *thresholds-traffic
