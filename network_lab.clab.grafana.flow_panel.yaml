@@ -31,7 +31,7 @@ cells:
     fillColor:
       thresholds: *thresholds-operstate
   link_id:c8kv1:Gi2:c8kv2:Gi2:
-    dataRef: c8kv1:Gi2:out
+    dataRef: c8kv1:Gi2
     label: *label-config
     strokeColor:
       thresholds: *thresholds-traffic
