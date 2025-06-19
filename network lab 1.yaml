@@ -30,8 +30,8 @@ cells:
     dataRef: Cisco-IOS-XE-interfaces-oper:interfaces/interface
     fillColor:
       thresholds: *thresholds-operstate
-  link_id:c8kv1:Gi2:c8kv2:Gi2:
-    dataRef: c8kv1:Gi2
+  link_id:c8kv1:VamZ-inS5vlgVg0Zen2k-1
+    dataRef: Cisco-IOS-XE-interfaces-oper:interfaces/interface
     label: *label-config
     strokeColor:
       thresholds: *thresholds-traffic
